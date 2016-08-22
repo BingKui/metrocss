@@ -1,0 +1,35 @@
+.mc-table {
+	color: #333333;
+	border-collapse: collapse;
+	width: 100%;
+	margin: 10px auto;
+	border: 1px solid #e8e8e8;
+	border-left: none;
+	border-right: none;
+	margin-bottom: 10px;
+}
+.mc-table thead th,
+.mc-table tbody td,
+.mc-table tfoot td{
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #e8e8e8;
+	font-size: 12px;
+}
+.mc-table thead th,
+.mc-table thead td{
+	padding: 8px;
+	font-size: 14px;
+	text-align: left;
+	border: none;
+	background-color: #eee;
+	color: #777;
+}
+.mc-table tfoot td{
+	font-size: 14px;
+	text-align: right;
+}
+.mc-table tr:hover{
+	background-color: #dbecf9;
+}

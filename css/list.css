@@ -1,0 +1,293 @@
+/*普通列表样式ul li*/
+
+.mc-list,
+.mc-article-list {
+	width: auto;
+	display: block;
+	overflow: hidden;
+	height: auto;
+	border-bottom: 1px solid #e8e8e8;
+	border-top: 1px solid #e8e8e8;
+	margin-bottom: 10px;
+	position: relative;
+	background-color: #fff;
+}
+
+.mc-list .mc-list-item {
+	display: block;
+	min-height: 42px;
+	width: 100%;
+	line-height: 42px;
+	font-size: 16px;
+	position: relative;
+	overflow: hidden;
+	padding: 0 15px;
+	-webkit-touch-callout: none
+}
+.mc-list .mc-media{
+	line-height: 21px;
+	padding: 11px 15px;
+	text-indent: 0;
+}
+.mc-list .mc-media.mc-item-icon{
+	padding-right: 35px;
+}
+.mc-list-media .mc-list-item{
+	position: relative;
+	padding: 11px 15px;
+	line-height: 21px;
+	box-sizing: border-box;
+    -webkit-user-select: none;
+    outline: 0;
+}
+.mc-icon-list.mc-list-media .mc-list-item{
+	padding: 0 15px;
+}
+.mc-list .mc-list-item:before {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 15px;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #e8e8e8;
+}
+
+.mc-list .mc-list-item:last-child:after,
+.mc-list .mc-list-item:last-child:before {
+	height: 0
+}
+
+
+/*块级列表*/
+
+
+/*
+.mc-list-block {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	height: auto;
+	border-top: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.mc-list-block .mc-list-item {
+	position: relative;
+	float: left;
+	min-height: 100px;
+	width: 50%;
+	line-height: 100px;
+	font-size: 14px;
+	text-align: center;
+	border-bottom: 1px dashed #e8e8e8;
+}
+
+.mc-list-block .mc-list-item:hover {
+	background-color: #F9F9F9;
+}
+
+.mc-list-block .mc-list-item:nth-child(odd) {
+	border-right: 1px dashed #e8e8e8;
+	margin-left: -1px;
+}
+
+.mc-list-block .mc-list-item:nth-child(even) {
+	float: right;
+}
+
+.mc-list-block .mc-list-item:last-child,
+.mc-list .mc-list-item:last-child {
+	border-bottom: none;
+	border-right: none;
+}
+
+.mc-list-item.mc-w-100 {
+	width: 100%;
+}*/
+
+
+/*带链接的列表*/
+
+.mc-list a.mc-list-item {
+	cursor: pointer;
+}
+
+.mc-list a.mc-list-item:hover {
+	background-color: #F9F9F9;
+}
+
+.mc-list .mc-list-item a:hover,
+.mc-list .mc-list-item a:active {
+	background-color: #F9F9F9;
+}
+
+
+/*内容占据整个屏幕的列表*/
+
+.mc-article-list {
+	border: none;
+}
+
+.mc-article-list .mc-list-item {
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	margin-bottom: -1px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.mc-article-list .mc-list-item:last-child {
+	margin-bottom: 0;
+}
+
+.mc-article-list .mc-list-item:hover,
+.mc-article-list .mc-list-item:active {
+	background-color: #FAFDFF;
+	border-color: #88D3F9;
+	position: relative;
+	z-index: 2;
+}
+
+.mc-article-list .mc-list-item.disabled,
+.mc-article-list .mc-list-item.disabled:focus,
+.mc-article-list .mc-list-item.disabled:hover {
+	color: #777;
+	background-color: #eee;
+	cursor: default;
+	border: none;
+}
+
+
+/*设置禁用样式*/
+
+.mc-list-item.disabled,
+.mc-list-item.disabled:focus,
+.mc-list-item.disabled:hover {
+	color: #777;
+	background-color: #eee;
+	cursor: default;
+}
+
+.mc-list-item.disabled:after,
+.mc-list-item.disabled:before {
+	left: 0;
+}
+
+
+/*设置条纹*/
+
+.mc-list-streak .mc-list-item:after,
+.mc-list-streak .mc-list-item:before,
+.mc-list-icon .mc-list-item:before {
+	left: 0;
+}
+.mc-list-icon .mc-media:before{
+	left: 15px;
+}
+.mc-list-streak .mc-list-item:nth-child(even) {
+	background-color: #F7F7F9;
+}
+
+
+/*添加右侧图标*/
+.mc-list-icon .mc-list-item .mc-item-icon {
+	width: 100%;
+	display: block;
+	height: 100%;
+	margin-left: -15px;
+	text-indent: 15px;
+}
+.mc-list-icon .mc-item-icon:after {
+	display: inline-block;
+	font: normal normal normal 1.6rem/1 "FontAwesome", sans-serif;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+	font-size: 20px;
+	right: 45px;
+	position: absolute;
+	color: #787878;
+}
+
+.mc-right:after {
+	content: "\f105";
+	margin-top: 11px;
+}
+
+.mc-bottom:after {
+	content: "\f107";
+	margin-top: 11px;
+}
+
+.mc-top:after {
+	content: "\f106";
+	margin-top: 11px;
+}
+.mc-list-media .mc-item-icon:after{
+	right: 15px;
+	margin-top: -33px;
+}
+
+/*折叠内容*/
+
+.mc-collapse-content {
+	display: none;
+	padding: 10px 20px 10px 23px;
+	width: auto;
+	color: #787878;
+}
+
+.mc-collapse-content p {
+	padding: 0;
+	margin: 0;
+	line-height: 24px;
+	font-size: 13px;
+}
+/*人物信息展示列表*/
+.mc-people-list{
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	padding-bottom: 20px;
+}
+.mc-people-list .mc-list-item{
+	width: 100%;
+	margin-top: 5px;
+}
+.mc-people-list .mc-list-title{
+	padding: 15px 0;
+	text-align: center;
+	display: block;
+    font-size: 24px;
+    color: #333;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 1.1;
+}
+.mc-people-img{
+	display: block;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.mc-people-info{
+	width: 100%;
+	display: block;
+	height: 22px;
+	line-height: 22px;
+	font-size: 16px;
+	color: #333;
+	text-align: center;
+	margin-top: 5px;
+}
+.mc-people-info:last-child{
+	margin: 0;
+	color: rgba(0, 0, 0, 0.6);
+}
