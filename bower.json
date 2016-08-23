@@ -1,0 +1,12 @@
+{
+  "name": "metrocss",
+  "main": "dist/metrocss.min.css",
+  "license": "ISC",
+  "ignore": [
+    "package.json"
+  ],
+  "keywords": [
+    "metrocss",
+    "metro"
+  ]
+}
